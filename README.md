@@ -1,6 +1,6 @@
-**#Calculadora Futurística**
+#Calculadora Futurística
 
-##**Bem-vindo ao repositório da Calculadora Futurística! Este projeto é uma calculadora de aparência moderna e futurística, desenvolvida com HTML, CSS e JavaScript. A interface foi desenhada para proporcionar uma experiência visualmente atraente e intuitiva.***
+Bem-vindo ao repositório da Calculadora Futurística! Este projeto é uma calculadora de aparência moderna e futurística, desenvolvida com HTML, CSS e JavaScript. A interface foi desenhada para proporcionar uma experiência visualmente atraente e intuitiva.***
 
 **###Demonstração**
 
