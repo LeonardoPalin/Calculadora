@@ -6,6 +6,7 @@ body {
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #1a1a1a; 
+}
 
 .calculator {
     border: 1px solid #333; 
@@ -13,6 +14,16 @@ body {
     padding: 20px;
     background: linear-gradient(145deg, #2e2e2e, #3a3a3a); 
     box-shadow: 5px 5px 15px #000000, -5px -5px 15px #4a4a4a;
+    width: 100%;
+    max-width: 400px; 
+}
+
+.title {
+    text-align: center;
+    font-size: 1.5em;
+    color: #0affef;
+    text-shadow: 0 0 5px #0affef, 0 0 10px #0affef;
+    margin-bottom: 20px; 
 }
 
 .display {
@@ -27,15 +38,43 @@ body {
     text-shadow: 0 0 5px #0affef, 0 0 10px #0affef; 
 }
 
-.buttons {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr); 
-    gap: 18px;
+.history {
+    font-size: 1em;
+    color: #fff;
+    margin-bottom: 18px;
+    background-color: #2e2e2e;
+    border-radius: 5px;
+    padding: 10px;
+    max-height: 150px; 
+    overflow-y: auto; 
 }
 
-button {
-    padding: 20px;
-    font-size: 1.5em;
+.history div {
+    margin-bottom: 5px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.number-buttons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px; 
+    flex: 3; 
+}
+
+.operator-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; 
+    flex: 1; 
+}
+
+.button {
+    padding: 15px; 
+    font-size: 1.2em; 
     border: none;
     border-radius: 5px;
     background: linear-gradient(145deg, #3b3b3b, #474747); 
@@ -45,12 +84,77 @@ button {
     transition: all 0.3s ease;
 }
 
-button:hover {
+.button:hover {
     background-color: #555; 
     box-shadow: 0 0 10px #0affef, 0 0 20px #0affef; 
 }
 
-button:active {
+.button:active {
     background-color: #444; 
     box-shadow: inset 0 0 10px #0affef; 
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .calculator {
+        padding: 15px;
+    }
+
+    .title {
+        font-size: 1.3em;
+    }
+
+    .display {
+        font-size: 1.5em;
+        padding: 8px;
+    }
+
+    .history {
+        font-size: 0.9em;
+        padding: 8px;
+    }
+
+    .button {
+        padding: 12px; 
+        font-size: 1em; 
+    }
+}
+
+@media (max-width: 480px) {
+    .calculator {
+        padding: 10px;
+    }
+
+    .title {
+        font-size: 1em;
+    }
+
+    .display {
+        font-size: 1.2em;
+        padding: 5px;
+    }
+
+    .history {
+        font-size: 0.8em;
+        padding: 5px;
+    }
+
+    .buttons {
+        gap: 10px;
+        flex-direction: column;
+    }
+
+    .number-buttons {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .operator-buttons {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .button {
+        padding: 10px; 
+        font-size: 0.9em; 
+    }
 }
