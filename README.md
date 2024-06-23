@@ -9,9 +9,9 @@ Interface Responsiva: Adaptável a diferentes tamanhos de tela.
 Visual Futurista: Uso de cores neon, sombras e efeitos de brilho.
 
 #### **Tecnologias Utilizadas**
-*HTML*
-*CSS*
-*JavaScript*
+HTML
+CSS
+JavaScript
 
 ##### **Contato**
 Se você tiver alguma dúvida ou sugestão, entre em contato comigo em leonardo.palin@unemat.br
